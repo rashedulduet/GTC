@@ -1,0 +1,372 @@
+/* common CSS start */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    margin-bottom: 0rem;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color:rgba(72, 212, 26,0.1);
+}
+/* common css end */
+/* header part start */
+#header .container .bcg{
+    background: url(../picture/header-bg.png) no-repeat center;
+    background-size: cover;
+    margin: 0px 1px;
+    
+}
+#header .maindiv{
+    width: 100%;
+    height: 100px;
+   padding: 0px;
+   text-align: center;   
+}
+#header .maindiv img{
+    width: 100px;
+    height: 100px;          
+}
+/* header part end */
+/* navbar start */
+#navbar ul{
+    list-style-type: none;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
+#navbar .main_nav .list{
+        margin-right:11px;
+        position: relative;
+        transition: all linear 0.3s;
+       
+        }
+#navbar .list .sub_menu{
+    opacity: 0;
+    visibility: hidden;
+    /* display: none; */
+    position: absolute;
+    top: 39px;
+    left: -11px;
+    transition: all linear 0.3s;
+}
+#navbar .list .sub_menu ul li{
+    width: 125px;
+    margin-bottom: 2px;
+}
+#navbar .main_nav .list:hover .sub_menu{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+#navbar .main_nav li a:hover{
+color: white;
+}
+#navbar .main_div_form .btn{
+    margin-right: 0px;
+} 
+
+/* navbar end */
+/* marque section start */
+#marque .notice{
+    margin: 0px 30px;
+}
+/* marque section end */
+/* slider part start */
+
+#slider_single .main_div .sub_div{
+    width: 100%;
+    height: 489px;
+    text-align: center;
+    position: relative;
+       }
+       #slider_single .main_div .sub_div h3{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: rgb(243, 248, 246);
+        position: absolute;
+        top: 135px;
+        left: 378px;
+        opacity: 0;
+        transition: all linear .9s;
+    }
+    #slider_single .main_div .sub_div.slick-active h3{
+       
+        position: absolute;
+        top: 165px;
+        left: 378px;
+        opacity: 1;
+    }
+    #slider_single .main_div .sub_div h4 a{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color:white;
+        position: absolute;
+        top: 253px;
+        left: 404px;
+        opacity: 0;
+        transition: all linear .9s;
+    }
+    #slider_single .main_div .sub_div.slick-active h4 a{
+        position: absolute;
+        top: 240px;
+        left: 404px;
+        opacity: 1;
+    }
+    #slider_single .main_div .sub_div p{
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: rgb(253, 251, 251);
+        position: absolute;
+        top: 196px;
+        left: 174px;
+        opacity:0 ;
+        transition: all linear .9s;
+        width: 450px;
+    }
+    #slider_single .main_div .sub_div.slick-active p{
+        position: absolute;
+        top: 196px;
+        left: 258px;
+        opacity: 1;
+    }
+#slider_single .main_div .sub_div::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    content: "";
+}
+#slider_single .main_div .sub_div.div01{
+    background: url(../picture/gtc-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#slider_single .main_div .sub_div.div02{
+    background: url(../picture/gtc-2.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider_single .main_div .sub_div.div03{
+    background: url(../picture/gtc-3.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider_single .main_div .sub_div.div04{
+    background: url(../picture/gtc-4.png) no-repeat center;
+    background-size: cover;
+}
+#slider_single .main_div .sub_div.div05{
+    background: url(../picture/gtc-5.jpg) no-repeat center;
+    background-size: cover;
+}   
+#slider_single .slick-slider .slick-list{
+    position: relative;
+}
+#slider_single ul{
+    list-style-type: none;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+#slider_single ul li{
+    display: inline-block;
+    margin: 0px 5px;
+} 
+#slider_single ul li.slick-active button{
+   background-color: tomato;
+} 
+#slider_single .main_div .slick-arrow{
+    height: 50px;
+    width: 50px;
+    background-color:transparent;
+    font-size: 25px;
+    line-height: 50px;
+    color: blanchedalmond;
+    text-align: center;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+} 
+#slider_single .main_div .slick-arrow:hover{
+    background-color: black;
+}
+#slider_single .main_div .fa-chevron-left.slick-arrow{
+position: absolute;
+top: 50%;
+left: 0px;
+transform: translateY(-50%);
+z-index: 999;
+}
+#slider_single .main_div .fa-chevron-right.slick-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 999;
+    }    
+#slider_single ul li button{
+    font-size: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+  } 
+#slider_single .profile{
+    text-align: center;
+    border: 2px solid rgb(53, 107, 103);
+    background-color: rgb(194, 229, 250);
+    
+}
+#slider_single .profile h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(78, 129, 82);
+    text-align: center;
+    padding: 5px 1px;
+    color: white;
+} 
+#slider_single .profile img{
+    width: 150px;
+    height: 150px;    
+}
+#slider_single .profile h4{
+    font-size: 16px;
+    margin-top: 5px;    
+}
+#slider_single .profile p{
+    font-size: 16px;
+    margin-top: -5px;
+    line-height: 15px; 
+    margin-bottom: 5px;        
+}
+#slider_single .moving_notice_board h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(78, 129, 82);
+    text-align: center;
+    padding: 5px 1px;
+    color: white;
+    margin-top: 5px;
+}
+#slider_single .moving_notice_board a{
+    font-size: 14px;
+    width: 255px;
+    margin-bottom: 2px;
+}
+/* slider part end */
+/* Introduction part start */
+#introduction{
+    padding-top: 10px;
+}
+#introduction .main_div01{
+      height: 180px;
+}
+#introduction .picture_div .img{
+   
+    height: 180px;
+    margin-right:3px;
+    position: relative;
+       }
+     
+    #introduction .picture_div .img img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    #introduction .picture_div .sub_div.slick-active{
+        padding-top: 20px;
+        transition: all linear 0.6s;
+    }
+    #introduction .picture_div .img::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color:rgba(0, 0, 0,.7);
+        content: "";
+    }
+    #introduction .sub_div.slick-active.slick-center .img::after{      
+        background-color:transparent;      
+    }
+#introduction .sub_div.slick-active.slick-center{
+margin-top:-20px !important;
+}
+
+   
+  
+
+#introduction .main_div02{
+    height: 180px;
+  }
+  #introduction .main_div02 .text_div .sub_div{
+    height: 100%;
+    text-align: center;
+  }
+  #introduction .main_div02 .text_div .sub_div h2{
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+  }
+  #introduction .main_div02 .text_div .sub_div p{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+  }
+  #introduction .main_div02 .text_div .sub_div .history{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-align: justify;
+  }
+  #introduction .main_div03{
+      position: relative;
+  }
+  #introduction .main_div03 .moving_notice_a{
+    font-size: 14px;
+    width: 184px;
+    margin-bottom: 2px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+#introduction .main_div03 .moving_notice_a a{
+ margin-bottom: 2px;
+}
+/* Introduction part end */
+
+/* News feed start */
+#new_feed{
+    margin-top: 75px;
+
+}
+#new_feed .maindiv .sub_div{
+    width: 32%;
+    height: 150px;
+    background-color: rgb(224, 224, 221);
+    border: 1px solid rgb(82, 79, 79);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+#new_feed .maindiv .sub_div ul{
+    position: absolute;
+    top: 32px;
+    left: 92px;
+
+}
+#new_feed .map img{
+    width: 100%;
+}
+/* News feed end */
